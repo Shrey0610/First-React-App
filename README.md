@@ -1,1 +1,3 @@
 # First-React-App
+## Built as a solo project this will be extended in future for my MERN stack website.
+### Starting off with React! Lets Go...
