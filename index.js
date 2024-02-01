@@ -40,13 +40,35 @@ function Navbar() {
     )
 }
 
+
+
+//Imperative way of programming- we declare everything separately and then append that to the root element (which is not recommended)
+
+// const h1= document.createElement('h1');
+// h1.textContent= 'This is an imperative way to programming'
+// h1.className= 'header';
+// document.getElementById('root').append(h1);
+
+
+//This is Declarative way- (much recommended)
+// ReactDOM.render(<h1 className='header'>This is an Declarative way to programming</h1>, document.getElementById("root"))
+
+
+
+// Normal function declaration which will then be called into the DOM render-
+
 function MainContent(){
     return (<h1>I'm learning React!</h1>)
 }
 
 
+//JSX- (Javascript XML)
+
+
 ReactDOM.render(
-    <div>
+    // here div is important because it acts as a parent element and only under that we can place two children-
+    <div>               
         <Navbar/>
         <MainContent/>
+
     </div>, document.getElementById("root"))
