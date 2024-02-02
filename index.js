@@ -67,8 +67,18 @@ function MainContent(){
 
 ReactDOM.render(
     // here div is important because it acts as a parent element and only under that we can place two children-
-    <div>               
-        <Navbar/>
-        <MainContent/>
+    // <div>               
+    //     <Navbar/>
+    //     <MainContent/>
 
-    </div>, document.getElementById("root"))
+    // </div>
+    <nav>
+         <Navbar/>
+         <br/>
+        <h1>React App</h1>
+        <ul>
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>, document.getElementById("root"))
